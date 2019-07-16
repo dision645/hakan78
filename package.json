@@ -3,66 +3,10 @@
   "version": "2.2.0",
   "description": "Oracle Bots SDK for custom component development and webhook integrations",
   "main": "index.js",
-  "browser": "index-browser.js",
   "typings": "typings/index.d.ts",
   "license": "UPL-1.0",
   "author": "Oracle Corp.",
   "contributors": [
     "Matt Vander Vliet <matthew.vander.vliet@oracle.com>",
     "Henrick Yau <henrick.yau@oracle.com>"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oracle/bots-node-sdk"
-  },
-  "keywords": [
-    "oracle",
-    "bots",
-    "node",
-    "express",
-    "sdk",
-    "custom components",
-    "webhook"
-  ],
-  "engines": {
-    "node": ">=6.11.3",
-    "npm": ">=3.10.10"
-  },
-  "scripts": {
-    "build": "npm run lint && npm run typings",
-    "docs": "shx rm -rf ./docs && jsdoc -c jsdoc.json -d ./docs",
-    "postdocs": "node ./docshim.js",
-    "lint": "eslint . --ignore-pattern reports --ignore-pattern examples --ignore-pattern docs && tslint --project ./ts",
-    "test": "nyc jasmine",
-    "typings": "shx rm -rf ./typings && cd ./ts && tsc",
-    "prepack": "npm run build",
-    "cc": "node ./bin/cc.js init"
-  },
-  "bin": {
-    "bots-node-sdk": "bin/sdk.js"
-  },
-  "dependencies": {
-    "@hapi/joi": "^15.1.0",
-    "body-parser": "^1.18.2",
-    "leven": "^2.1.0",
-    "node-fetch": "^2.2.0"
-  },
-  "devDependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/express": "^4.16.0",
-    "@types/joi": "^14.3.3",
-    "docdash": "^0.4.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-jasmine": "^2.10.1",
-    "express": "^4.16.3",
-    "jasmine": "^2.8.0",
-    "jasmine-reporters": "^2.3.1",
-    "jasmine-spec-reporter": "^4.2.1",
-    "jsdoc": "^3.6.2",
-    "nyc": "^14.0.0",
-    "shx": "^0.3.2",
-    "supertest": "^3.4.2",
-    "tslint": "^5.10.0",
-    "typescript": "^2.9.2"
-  }
-}
+  
